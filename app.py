@@ -755,12 +755,70 @@ hr{border-color:#26344d!important}
   color:#93dfb5!important;
 }
 
-/* Responsive */
-@media(max-width:1050px){
-  [data-testid="stSidebar"]{width:270px!important;min-width:270px!important}
-  [data-testid="stAppViewContainer"] .main .block-container{padding:1.2rem!important}
-  .portal-title{font-size:2.1rem}
-  .portal-date{display:none}
+/* =========================================
+   RESPONSIVE SIDEBAR — NO CONTENT OVERLAP
+   ========================================= */
+
+/* Desktop */
+@media (min-width: 1051px){
+  [data-testid="stSidebar"]{
+    width:270px!important;
+    min-width:270px!important;
+  }
+
+  [data-testid="stAppViewContainer"] .main .block-container{
+    max-width:100%!important;
+  }
+}
+
+/* Tablet and Mobile */
+@media (max-width:1050px){
+
+  /* Sidebar becomes a proper mobile drawer */
+  [data-testid="stSidebar"]{
+    width:min(78vw, 320px)!important;
+    min-width:min(78vw, 320px)!important;
+    max-width:320px!important;
+  }
+
+  /* Dashboard uses the full available screen */
+  [data-testid="stAppViewContainer"] .main{
+    width:100%!important;
+    margin-left:0!important;
+  }
+
+  [data-testid="stAppViewContainer"] .main .block-container{
+    width:100%!important;
+    max-width:100%!important;
+    padding:1rem!important;
+    overflow-x:hidden!important;
+  }
+
+  .portal-title{
+    font-size:1.7rem!important;
+  }
+
+  .portal-date{
+    display:none!important;
+  }
+}
+
+/* Small Mobile Phones */
+@media (max-width:600px){
+
+  [data-testid="stSidebar"]{
+    width:85vw!important;
+    min-width:85vw!important;
+    max-width:320px!important;
+  }
+
+  [data-testid="stAppViewContainer"] .main .block-container{
+    padding:0.8rem!important;
+  }
+
+  .portal-title{
+    font-size:1.45rem!important;
+  }
 }
 </style>
 """, unsafe_allow_html=True)
