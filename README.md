@@ -1,15 +1,12 @@
 # 🧠 MeetPlus AI
 
-```
 $ whoami
 > MeetPlus AI — Intelligent Meeting Action-Item Extractor
 
 $ tagline --show
 > "Turn messy meetings into organized action."
-```
 
-[Live Demo — Add after deployment]
-
+[🚀 Live Demo](https://your-actual-app.streamlit.app)
 ---
 
 ## ☁️ Shared Cloud Workspace Setup (Supabase)
