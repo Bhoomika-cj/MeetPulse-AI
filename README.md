@@ -6,7 +6,7 @@ $ whoami
 $ tagline --show
 > "Turn messy meetings into organized action."
 
-[🚀 Live Demo](https://your-actual-app.streamlit.app)
+[🚀 Live Demo](https://meetpulse-ai-bhoomi.streamlit.app/)
 ---
 
 ## ☁️ Shared Cloud Workspace Setup (Supabase)
